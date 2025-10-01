@@ -31,17 +31,21 @@ class Bahan extends Controller
 
     public function store()
     {
-        $data = $this->request->getPost();
-        $data['status'] = 'tersedia';  
+        $post = $this->request->getPost();
+        $post['status'] = 'tersedia';  
 
-        if ($data['jumlah'] < 0) {
-            return redirect()->back()->with('error', 'Jumlah tidak boleh negatif');
+        
+        if (!isset($post['jumlah']) || $post['jumlah'] < 0) {
+            return redirect()->back()->with('error', 'Jumlah harus lebih dari atau sama dengan 0');
+        }
+        if (strtotime($post['tanggal_kadaluarsa']) <= strtotime($post['tanggal_masuk'])) {
+            return redirect()->back()->with('error', 'Tanggal kadaluarsa harus setelah tanggal masuk');
         }
 
-        if ($this->model->save($data)) {
-            return redirect()->to('/bahan')->with('success', 'Bahan baku berhasil ditambahkan');
+        if ($this->model->insert($post)) {
+            return redirect()->to('/bahan')->with('success', 'Bahan baku berhasil ditambahkan');  // Redirect ke /bahan
         } else {
-            return redirect()->back()->with('error', 'Gagal menambahkan bahan: ' . $this->model->errors());
+            return redirect()->back()->with('error', 'Gagal menambahkan bahan: ' . implode(', ', $this->model->errors()));
         }
     }
 }
