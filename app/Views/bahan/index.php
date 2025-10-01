@@ -1,7 +1,6 @@
 <?= $this->extend('template') ?>
 
 <?= $this->section('content') ?>
-<h2>Data Bahan Baku</h2>
 <?php if (session()->getFlashdata('success')): ?>
     <div class="alert alert-success"><?= session()->getFlashdata('success') ?></div>
 <?php endif; ?>
@@ -9,6 +8,7 @@
     <div class="alert alert-danger"><?= session()->getFlashdata('error') ?></div>
 <?php endif; ?>
 <a href="<?= base_url('bahan/create') ?>" class="btn btn-primary mb-3">Tambah Bahan</a>
+<a href="<?= base_url('permintaan') ?>" class="btn btn-info mb-3 ms-2">Lihat Status Permintaan</a>
 <table class="table table-bordered">
     <thead>
         <tr>

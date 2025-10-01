@@ -11,31 +11,21 @@ class Permintaan extends Controller
     public function __construct()
     {
         $this->model = new PermintaanModel();
-        if (!session()->get('logged_in') || session()->get('role') !== 'dapur') {
-            return redirect()->to('/auth/login')->with('error', 'Akses ditolak');
+        if (!session()->get('logged_in') || session()->get('role') !== 'gudang') {
+            return redirect()->to('/dashboard/gudang')->with('error', 'Akses ditolak');
         }
     }
 
     public function index()
     {
-        $data['permintaan'] = $this->model->findAll();
-        $data['title'] = 'Daftar Permintaan';
+        $data['permintaan'] = $this->model->getPermintaanWithDetails();
+        $data['title'] = 'Lihat Status Permintaan';
         return view('permintaan/index', $data);
     }
 
     public function create()
     {
-        $data['title'] = 'Tambah Permintaan';
-        return view('permintaan/create', $data);
-    }
-
-    public function store()
-    {
-        $data = $this->request->getPost();
-        if ($this->model->save($data)) {
-            return redirect()->to('/permintaan')->with('success', 'Permintaan berhasil ditambahkan');
-        } else {
-            return redirect()->back()->with('error', 'Gagal menambahkan permintaan: ' . $this->model->errors());
-        }
+        $data['title'] = 'Buat Permintaan';
+        return view('permintaan/create', $data); 
     }
 }

@@ -1,7 +1,7 @@
 <?= $this->extend('template') ?>
 
 <?= $this->section('content') ?>
-<h2>Dashboard Gudang</h2>
+<h2>Gudang MBG</h2>
 <p>Selamat datang, <?= session()->get('name') ?>! Kelola stok bahan baku di sini.</p>
 <?php if (session()->getFlashdata('success')): ?>
     <div class="alert alert-success"><?= session()->getFlashdata('success') ?></div>
