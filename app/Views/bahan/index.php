@@ -20,6 +20,7 @@
             <th>Tgl Masuk</th>
             <th>Tgl Kadaluarsa</th>
             <th>Status</th>
+            <th>Aksi</th>
         </tr>
     </thead>
     <tbody>
@@ -33,6 +34,9 @@
                 <td><?= $item['tanggal_masuk'] ?></td>
                 <td><?= $item['tanggal_kadaluarsa'] ?></td>
                 <td><?= $item['status'] ?></td>
+                <td>
+                    <a href="<?= base_url('bahan/edit/' . $item['id']) ?>" class="btn btn-warning btn-sm">Edit</a>
+                </td>
             </tr>
         <?php endforeach; ?>
     </tbody>

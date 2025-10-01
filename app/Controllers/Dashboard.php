@@ -34,10 +34,11 @@ class Dashboard extends Controller
     }
 
     public function gudang()
-    {
-        $data['title'] = 'Dashboard Gudang';
-        $data['bahan'] = $this->bahanModel->getWithStatus();
-        $data['permintaan_menunggu'] = $this->permintaanModel->where('status', 'menunggu')->countAllResults();
-        return view('dashboard/gudang', $data);
+{
+    if (session()->get('role') !== 'gudang') {
+        return redirect()->to('/dashboard/dapur');
     }
+    $data['title'] = 'Dashboard Gudang';
+    return view('dashboard/gudang', $data);
+}
 }

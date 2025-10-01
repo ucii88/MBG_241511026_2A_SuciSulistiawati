@@ -2,37 +2,13 @@
 
 <?= $this->section('content') ?>
 <h2>Dashboard Gudang</h2>
-<p>Selamat datang, <?= session()->get('name') ?>!</p>
+<p>Selamat datang, <?= session()->get('name') ?>! Kelola stok bahan baku di sini.</p>
+<?php if (session()->getFlashdata('success')): ?>
+    <div class="alert alert-success"><?= session()->getFlashdata('success') ?></div>
+<?php endif; ?>
+<?php if (session()->getFlashdata('error')): ?>
+    <div class="alert alert-danger"><?= session()->getFlashdata('error') ?></div>
+<?php endif; ?>
+<a href="<?= base_url('bahan') ?>" class="btn btn-primary mb-3">Lihat Data Bahan Baku</a>
 
-
-<h3>Ringkasan Stok Bahan Baku</h3>
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>Nama</th>
-            <th>Jumlah</th>
-            <th>Satuan</th>
-            <th>Status</th>
-            <th>Tgl Kadaluarsa</th>
-        </tr>
-    </thead>
-    <tbody>
-        <?php foreach ($bahan as $item): ?>
-            <tr>
-                <td><?= $item['nama'] ?></td>
-                <td><?= $item['jumlah'] ?></td>
-                <td><?= $item['satuan'] ?></td>
-                <td><?= $item['status'] ?></td>
-                <td><?= $item['tanggal_kadaluarsa'] ?></td>
-            </tr>
-        <?php endforeach; ?>
-    </tbody>
-</table>
-
-
-<h3>Permintaan Menunggu</h3>
-<p>Jumlah permintaan yang menunggu: <?= $permintaan_menunggu ?></p>
-<a href="<?= base_url('permintaan') ?>" class="btn btn-primary">Lihat Semua Permintaan</a>
-
-<a href="<?= base_url('bahan/create') ?>" class="btn btn-success mt-3">Tambah Bahan Baru</a>
 <?= $this->endSection() ?>

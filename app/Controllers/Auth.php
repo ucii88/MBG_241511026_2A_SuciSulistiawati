@@ -41,7 +41,7 @@ class Auth extends Controller
         ]);
 
         if ($user['role'] === 'gudang') {
-            return redirect()->to('/dashboard/gudang');
+            return redirect()->to('dashboard/gudang');
         } else {
             return redirect()->to('/permintaan/create');
         }
