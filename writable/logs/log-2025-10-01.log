@@ -753,3 +753,658 @@ DEBUG - 2025-10-01 07:47:00 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2025-10-01 07:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-10-01 07:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-10-01 07:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 07:57:15 --> Input email: gudang.a@example.com, password: gudang123
+DEBUG - 2025-10-01 07:57:15 --> Login berhasil untuk: gudang.a@example.com
+DEBUG - 2025-10-01 07:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 07:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 07:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-01 07:57:20 --> ErrorException: Undefined variable $bahan
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard\gudang.php on line 20.
+ 1 APPPATH\Views\dashboard\gudang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bahan', 'C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dashboard/gudang', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(16): view('dashboard/gudang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-10-01 07:57:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-01 07:57:22 --> ErrorException: Undefined variable $bahan
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard\gudang.php on line 20.
+ 1 APPPATH\Views\dashboard\gudang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bahan', 'C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dashboard/gudang', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(16): view('dashboard/gudang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-10-01 07:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-01 07:57:25 --> ErrorException: Undefined variable $bahan
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard\gudang.php on line 20.
+ 1 APPPATH\Views\dashboard\gudang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bahan', 'C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dashboard/gudang', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(16): view('dashboard/gudang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-10-01 07:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-01 07:57:39 --> ErrorException: Undefined variable $bahan
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard\gudang.php on line 20.
+ 1 APPPATH\Views\dashboard\gudang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bahan', 'C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dashboard/gudang', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(16): view('dashboard/gudang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-10-01 07:57:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-01 07:57:40 --> ErrorException: Undefined variable $bahan
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard\gudang.php on line 20.
+ 1 APPPATH\Views\dashboard\gudang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bahan', 'C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dashboard/gudang', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(16): view('dashboard/gudang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-10-01 07:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 07:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-01 07:57:41 --> ErrorException: Undefined variable $bahan
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard\gudang.php on line 20.
+ 1 APPPATH\Views\dashboard\gudang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bahan', 'C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dashboard/gudang', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(16): view('dashboard/gudang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-10-01 07:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 07:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 07:57:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-01 07:57:42 --> ErrorException: Undefined variable $bahan
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard\gudang.php on line 20.
+ 1 APPPATH\Views\dashboard\gudang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bahan', 'C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dashboard/gudang', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(16): view('dashboard/gudang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-10-01 07:57:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 07:57:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-01 07:57:54 --> ErrorException: Undefined variable $bahan
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard\gudang.php on line 20.
+ 1 APPPATH\Views\dashboard\gudang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bahan', 'C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dashboard/gudang', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(16): view('dashboard/gudang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-10-01 08:01:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-01 08:01:24 --> ErrorException: Undefined variable $bahan
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard\gudang.php on line 20.
+ 1 APPPATH\Views\dashboard\gudang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bahan', 'C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dashboard/gudang', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(16): view('dashboard/gudang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-10-01 08:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-01 08:03:31 --> ErrorException: Undefined variable $bahan
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard\gudang.php on line 20.
+ 1 APPPATH\Views\dashboard\gudang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bahan', 'C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dashboard/gudang', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(16): view('dashboard/gudang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-10-01 08:05:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-01 08:05:53 --> ErrorException: Undefined variable $bahan
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard\gudang.php on line 20.
+ 1 APPPATH\Views\dashboard\gudang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bahan', 'C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dashboard/gudang', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(16): view('dashboard/gudang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-10-01 08:05:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-01 08:05:54 --> ErrorException: Undefined variable $bahan
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard\gudang.php on line 20.
+ 1 APPPATH\Views\dashboard\gudang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bahan', 'C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dashboard/gudang', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(16): view('dashboard/gudang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-10-01 08:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-01 08:07:57 --> ErrorException: Undefined variable $bahan
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard\gudang.php on line 20.
+ 1 APPPATH\Views\dashboard\gudang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bahan', 'C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dashboard/gudang', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(16): view('dashboard/gudang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-10-01 08:07:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-01 08:07:58 --> ErrorException: Undefined variable $bahan
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard\gudang.php on line 20.
+ 1 APPPATH\Views\dashboard\gudang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bahan', 'C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dashboard/gudang', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(16): view('dashboard/gudang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-10-01 08:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-01 08:07:59 --> ErrorException: Undefined variable $bahan
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard\gudang.php on line 20.
+ 1 APPPATH\Views\dashboard\gudang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bahan', 'C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dashboard/gudang', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(16): view('dashboard/gudang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-10-01 08:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-01 08:07:59 --> ErrorException: Undefined variable $bahan
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard\gudang.php on line 20.
+ 1 APPPATH\Views\dashboard\gudang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bahan', 'C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dashboard/gudang', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(16): view('dashboard/gudang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-10-01 08:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-01 08:08:05 --> ErrorException: Undefined variable $bahan
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard\gudang.php on line 20.
+ 1 APPPATH\Views\dashboard\gudang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bahan', 'C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dashboard/gudang', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(16): view('dashboard/gudang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-10-01 08:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-01 08:08:08 --> ErrorException: Undefined variable $bahan
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard\gudang.php on line 20.
+ 1 APPPATH\Views\dashboard\gudang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bahan', 'C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dashboard/gudang', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(16): view('dashboard/gudang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-10-01 08:08:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:08:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-01 08:08:12 --> ErrorException: Undefined variable $bahan
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard\gudang.php on line 20.
+ 1 APPPATH\Views\dashboard\gudang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bahan', 'C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\dashboard\\gudang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dashboard/gudang', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(16): view('dashboard/gudang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-01 08:09:17 --> Error: Class "App\Models\BahanBakuModel" not found
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\Dashboard.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Dashboard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-01 08:09:18 --> Error: Class "App\Models\BahanBakuModel" not found
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\Dashboard.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Dashboard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-10-01 08:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:11:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:16:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:17:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-10-01 08:17:05 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xampp\htdocs\ci4_ETS\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\ci4_ETS\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `bahan_b...', 0)
+#1 C:\xampp\htdocs\ci4_ETS\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `bahan_b...')
+#2 C:\xampp\htdocs\ci4_ETS\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `bahan_b...')
+#3 C:\xampp\htdocs\ci4_ETS\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `bahan_b...', Array, false)
+#4 C:\xampp\htdocs\ci4_ETS\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ci4_ETS\system\BaseModel.php(1025): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\ci4_ETS\system\Model.php(860): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\ci4_ETS\app\Models\BahanBakuModel.php(30): CodeIgniter\Model->update('1', Array)
+#8 C:\xampp\htdocs\ci4_ETS\app\Controllers\Dashboard.php(39): App\Models\BahanBakuModel->getWithStatus()
+#9 C:\xampp\htdocs\ci4_ETS\system\CodeIgniter.php(933): App\Controllers\Dashboard->gudang()
+#10 C:\xampp\htdocs\ci4_ETS\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#11 C:\xampp\htdocs\ci4_ETS\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\ci4_ETS\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\ci4_ETS\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\ci4_ETS\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-10-01 08:17:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+[Method: GET, Route: dashboard/gudang]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `bahan_baku` SET `status` = :status:, `updated_at` = :updated_at:
+WHERE `bahan_baku`.`id` IN :bahan_baku.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1025): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(860): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Models\BahanBakuModel.php(30): CodeIgniter\Model->update('1', [...])
+ 6 APPPATH\Controllers\Dashboard.php(39): App\Models\BahanBakuModel->getWithStatus()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->gudang()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-01 08:17:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `bahan_baku` SET `status` = \'tersedia\', `updated_at` = \'2025-10-01 08:17:05\'
+WHERE `bahan_baku`.`id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `bahan_baku` SET `status` = \'tersedia\', `updated_at` = \'2025-10-01 08:17:05\'
+WHERE `bahan_baku`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `bahan_baku` SET `status` = :status:, `updated_at` = :updated_at:
+WHERE `bahan_baku`.`id` IN :bahan_baku.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1025): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(860): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Models\BahanBakuModel.php(30): CodeIgniter\Model->update('1', [...])
+ 8 APPPATH\Controllers\Dashboard.php(39): App\Models\BahanBakuModel->getWithStatus()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->gudang()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-01 08:17:05 --> [Caused by] mysqli_sql_exception: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `bahan_baku` SET `status` = \'tersedia\', `updated_at` = \'2025-10-01 08:17:05\'
+WHERE `bahan_baku`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `bahan_baku` SET `status` = \'tersedia\', `updated_at` = \'2025-10-01 08:17:05\'
+WHERE `bahan_baku`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `bahan_baku` SET `status` = \'tersedia\', `updated_at` = \'2025-10-01 08:17:05\'
+WHERE `bahan_baku`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `bahan_baku` SET `status` = :status:, `updated_at` = :updated_at:
+WHERE `bahan_baku`.`id` IN :bahan_baku.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1025): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(860): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Models\BahanBakuModel.php(30): CodeIgniter\Model->update('1', [...])
+ 9 APPPATH\Controllers\Dashboard.php(39): App\Models\BahanBakuModel->getWithStatus()
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->gudang()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-10-01 08:17:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-10-01 08:17:07 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xampp\htdocs\ci4_ETS\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\ci4_ETS\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `bahan_b...', 0)
+#1 C:\xampp\htdocs\ci4_ETS\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `bahan_b...')
+#2 C:\xampp\htdocs\ci4_ETS\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `bahan_b...')
+#3 C:\xampp\htdocs\ci4_ETS\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `bahan_b...', Array, false)
+#4 C:\xampp\htdocs\ci4_ETS\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ci4_ETS\system\BaseModel.php(1025): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\ci4_ETS\system\Model.php(860): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\ci4_ETS\app\Models\BahanBakuModel.php(30): CodeIgniter\Model->update('1', Array)
+#8 C:\xampp\htdocs\ci4_ETS\app\Controllers\Dashboard.php(39): App\Models\BahanBakuModel->getWithStatus()
+#9 C:\xampp\htdocs\ci4_ETS\system\CodeIgniter.php(933): App\Controllers\Dashboard->gudang()
+#10 C:\xampp\htdocs\ci4_ETS\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#11 C:\xampp\htdocs\ci4_ETS\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\ci4_ETS\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\ci4_ETS\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\ci4_ETS\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-10-01 08:17:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+[Method: GET, Route: dashboard/gudang]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `bahan_baku` SET `status` = :status:, `updated_at` = :updated_at:
+WHERE `bahan_baku`.`id` IN :bahan_baku.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1025): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(860): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Models\BahanBakuModel.php(30): CodeIgniter\Model->update('1', [...])
+ 6 APPPATH\Controllers\Dashboard.php(39): App\Models\BahanBakuModel->getWithStatus()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->gudang()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-01 08:17:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `bahan_baku` SET `status` = \'tersedia\', `updated_at` = \'2025-10-01 08:17:07\'
+WHERE `bahan_baku`.`id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `bahan_baku` SET `status` = \'tersedia\', `updated_at` = \'2025-10-01 08:17:07\'
+WHERE `bahan_baku`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `bahan_baku` SET `status` = :status:, `updated_at` = :updated_at:
+WHERE `bahan_baku`.`id` IN :bahan_baku.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1025): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(860): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Models\BahanBakuModel.php(30): CodeIgniter\Model->update('1', [...])
+ 8 APPPATH\Controllers\Dashboard.php(39): App\Models\BahanBakuModel->getWithStatus()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->gudang()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-01 08:17:07 --> [Caused by] mysqli_sql_exception: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `bahan_baku` SET `status` = \'tersedia\', `updated_at` = \'2025-10-01 08:17:07\'
+WHERE `bahan_baku`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `bahan_baku` SET `status` = \'tersedia\', `updated_at` = \'2025-10-01 08:17:07\'
+WHERE `bahan_baku`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `bahan_baku` SET `status` = \'tersedia\', `updated_at` = \'2025-10-01 08:17:07\'
+WHERE `bahan_baku`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `bahan_baku` SET `status` = :status:, `updated_at` = :updated_at:
+WHERE `bahan_baku`.`id` IN :bahan_baku.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1025): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(860): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Models\BahanBakuModel.php(30): CodeIgniter\Model->update('1', [...])
+ 9 APPPATH\Controllers\Dashboard.php(39): App\Models\BahanBakuModel->getWithStatus()
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->gudang()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-10-01 08:19:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:19:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:19:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:19:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:19:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:21:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:21:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:21:36 --> Input email: budi.gudang@mbg.id, password: pass123
+DEBUG - 2025-10-01 08:21:36 --> Login gagal untuk email: budi.gudang@mbg.id
+DEBUG - 2025-10-01 08:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:21:45 --> Input email: budi.gudang@mbg.id, password: pass123
+DEBUG - 2025-10-01 08:21:45 --> Login gagal untuk email: budi.gudang@mbg.id
+DEBUG - 2025-10-01 08:21:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:21:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:21:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:22:14 --> Input email: gudang.a@example.com, password: gudang123
+DEBUG - 2025-10-01 08:22:14 --> Login gagal untuk email: gudang.a@example.com
+DEBUG - 2025-10-01 08:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:25:03 --> Input email: budi.gudang@mbg.id, password: pass123
+DEBUG - 2025-10-01 08:25:03 --> User found: {"id":"1","name":"Budi Santoso","email":"budi.gudang@mbg.id","password":"32250170a0dca92d53ec9624f336ca24","role":"gudang","created_at":"2025-09-01 08:00:00"}
+DEBUG - 2025-10-01 08:25:03 --> Login gagal untuk email: budi.gudang@mbg.id
+DEBUG - 2025-10-01 08:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:26:12 --> Input email: budi.gudang@mbg.id, password: pass123
+DEBUG - 2025-10-01 08:26:12 --> User found: {"id":"1","name":"Budi Santoso","email":"budi.gudang@mbg.id","password":"32250170a0dca92d53ec9624f336ca24","role":"gudang","created_at":"2025-09-01 08:00:00"}
+DEBUG - 2025-10-01 08:26:12 --> Login gagal untuk email: budi.gudang@mbg.id
+DEBUG - 2025-10-01 08:26:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:26:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:31:49 --> Input email: budi.gudang@mbg.id, password: pass123
+DEBUG - 2025-10-01 08:31:49 --> User found: {"id":"1","name":"Budi Santoso","email":"budi.gudang@mbg.id","password":"$2y$10$6LEk8aN8z3Z1E5q7r9p4uO5mX8yZ7w1v2x3c4b5d6e7f8g9h0i1j2","role":"gudang","created_at":"2025-09-01 08:00:00"}
+DEBUG - 2025-10-01 08:31:49 --> Login gagal untuk email: budi.gudang@mbg.id
+DEBUG - 2025-10-01 08:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:32:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:32:13 --> Input email: budi.gudang@mbg.id, password: pass123
+DEBUG - 2025-10-01 08:32:13 --> User found: {"id":"1","name":"Budi Santoso","email":"budi.gudang@mbg.id","password":"$2y$10$6LEk8aN8z3Z1E5q7r9p4uO5mX8yZ7w1v2x3c4b5d6e7f8g9h0i1j2","role":"gudang","created_at":"2025-09-01 08:00:00"}
+DEBUG - 2025-10-01 08:32:13 --> Login gagal untuk email: budi.gudang@mbg.id
+DEBUG - 2025-10-01 08:32:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:32:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:32:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:33:35 --> Input email: budi.gudang@mbg.id, password: pass123
+DEBUG - 2025-10-01 08:33:35 --> User found: {"id":"1","name":"Budi Santoso","email":"budi.gudang@mbg.id","password":"$2y$10$6LEk8aN8z3Z1E5q7r9p4uO5mX8yZ7w1v2x3c4b5d6e7f8g9h0i1j2","role":"gudang","created_at":"2025-09-01 08:00:00"}
+DEBUG - 2025-10-01 08:33:36 --> Login gagal untuk email: budi.gudang@mbg.id
+DEBUG - 2025-10-01 08:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:35:20 --> Input email: budi.gudang@mbg.id, password: pass123
+DEBUG - 2025-10-01 08:35:20 --> User found: {"id":"1","name":"Budi Santoso","email":"budi.gudang@mbg.id","password":"$2y$10$6LEk8aN8z3Z1E5q7r9p4uO5mX8yZ7w1v2x3c4b5d6e7f8g9h0i1j2","role":"gudang","created_at":"2025-09-01 08:00:00"}
+DEBUG - 2025-10-01 08:35:21 --> Password verify result: false
+DEBUG - 2025-10-01 08:35:21 --> Login gagal untuk email: budi.gudang@mbg.id
+DEBUG - 2025-10-01 08:35:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:35:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:38:44 --> Input email: budi.gudang@mbg.id, password: pass123
+DEBUG - 2025-10-01 08:38:44 --> User found: {"id":"1","name":"Budi Santoso","email":"budi.gudang@mbg.id","password":"$2y$10$KgCFVIZ2SUcBULFGNR3Fl.xiRykcMxpqgaycUvMwpqRBqROd3Z.ZW","role":"gudang","created_at":"2025-09-01 08:00:00"}
+DEBUG - 2025-10-01 08:38:44 --> Password verify result: true
+DEBUG - 2025-10-01 08:38:45 --> Login berhasil untuk: budi.gudang@mbg.id
+DEBUG - 2025-10-01 08:38:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:38:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:41:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:42:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:42:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:42:07 --> Input email: dewi.dapur@mbg.id, password: pass123
+DEBUG - 2025-10-01 08:42:07 --> User found: {"id":"6","name":"Dewi Lestari","email":"dewi.dapur@mbg.id","password":"$2y$10$KgCFVIZ2SUcBULFGNR3Fl.xiRykcMxpqgaycUvMwpqRBqROd3Z.ZW","role":"dapur","created_at":"2025-09-01 08:30:00"}
+DEBUG - 2025-10-01 08:42:07 --> Password verify result: true
+DEBUG - 2025-10-01 08:42:08 --> Login berhasil untuk: dewi.dapur@mbg.id
+DEBUG - 2025-10-01 08:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:44:08 --> Input email: budi.gudang@mbg.id, password: pass123
+DEBUG - 2025-10-01 08:44:08 --> User found: {"id":"1","name":"Budi Santoso","email":"budi.gudang@mbg.id","password":"$2y$10$KgCFVIZ2SUcBULFGNR3Fl.xiRykcMxpqgaycUvMwpqRBqROd3Z.ZW","role":"gudang","created_at":"2025-09-01 08:00:00"}
+DEBUG - 2025-10-01 08:44:08 --> Password verify result: true
+DEBUG - 2025-10-01 08:44:08 --> Login berhasil untuk: budi.gudang@mbg.id
+DEBUG - 2025-10-01 08:44:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:44:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:45:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:45:55 --> Input email: dewi.dapur@mbg.id, password: pass123
+DEBUG - 2025-10-01 08:45:55 --> User found: {"id":"6","name":"Dewi Lestari","email":"dewi.dapur@mbg.id","password":"$2y$10$KgCFVIZ2SUcBULFGNR3Fl.xiRykcMxpqgaycUvMwpqRBqROd3Z.ZW","role":"dapur","created_at":"2025-09-01 08:30:00"}
+DEBUG - 2025-10-01 08:45:55 --> Password verify result: true
+DEBUG - 2025-10-01 08:45:55 --> Login berhasil untuk: dewi.dapur@mbg.id
+DEBUG - 2025-10-01 08:45:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:48:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-01 08:48:52 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "permintaan/create.php"
+[Method: GET, Route: permintaan/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('permintaan/create.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('permintaan/create', [], true)
+ 3 APPPATH\Controllers\Permintaan.php(29): view('permintaan/create', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Permintaan->create()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permintaan))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-10-01 08:50:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:53:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:53:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:53:09 --> Input email: budi.gudang@mbg.id, password: pass123
+DEBUG - 2025-10-01 08:53:09 --> User found: {"id":"1","name":"Budi Santoso","email":"budi.gudang@mbg.id","password":"$2y$10$KgCFVIZ2SUcBULFGNR3Fl.xiRykcMxpqgaycUvMwpqRBqROd3Z.ZW","role":"gudang","created_at":"2025-09-01 08:00:00"}
+DEBUG - 2025-10-01 08:53:09 --> Password verify result: true
+DEBUG - 2025-10-01 08:53:09 --> Login berhasil untuk: budi.gudang@mbg.id
+DEBUG - 2025-10-01 08:53:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:53:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:53:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-01 08:53:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "permintaan/index.php"
+[Method: GET, Route: permintaan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('permintaan/index.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('permintaan/index', [], true)
+ 3 APPPATH\Controllers\Permintaan.php(23): view('permintaan/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Permintaan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permintaan))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-10-01 08:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-01 08:55:07 --> ErrorException: Undefined property: CodeIgniter\View\View::$model
+[Method: GET, Route: permintaan]
+in APPPATH\Views\permintaan\index.php on line 29.
+ 1 APPPATH\Views\permintaan\index.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$model', 'C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\permintaan\\index.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\permintaan\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('permintaan/index', [], true)
+ 5 APPPATH\Controllers\Permintaan.php(23): view('permintaan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Permintaan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permintaan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-10-01 08:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-01 08:55:10 --> ErrorException: Undefined property: CodeIgniter\View\View::$model
+[Method: GET, Route: permintaan]
+in APPPATH\Views\permintaan\index.php on line 29.
+ 1 APPPATH\Views\permintaan\index.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$model', 'C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\permintaan\\index.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\permintaan\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('permintaan/index', [], true)
+ 5 APPPATH\Controllers\Permintaan.php(23): view('permintaan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Permintaan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permintaan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-10-01 08:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-01 08:55:15 --> ErrorException: Undefined property: CodeIgniter\View\View::$model
+[Method: GET, Route: permintaan]
+in APPPATH\Views\permintaan\index.php on line 29.
+ 1 APPPATH\Views\permintaan\index.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$model', 'C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\permintaan\\index.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\permintaan\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('permintaan/index', [], true)
+ 5 APPPATH\Controllers\Permintaan.php(23): view('permintaan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Permintaan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permintaan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-10-01 08:56:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-01 08:56:31 --> ErrorException: Undefined property: CodeIgniter\View\View::$model
+[Method: GET, Route: permintaan]
+in APPPATH\Views\permintaan\index.php on line 29.
+ 1 APPPATH\Views\permintaan\index.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$model', 'C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\permintaan\\index.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4_ETS\\app\\Views\\permintaan\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('permintaan/index', [], true)
+ 5 APPPATH\Controllers\Permintaan.php(23): view('permintaan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Permintaan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permintaan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-10-01 08:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 08:56:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

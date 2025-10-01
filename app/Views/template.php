@@ -458,12 +458,12 @@
         <?php endif; ?>
     </aside>
     
-    <!-- Sidebar Overlay for Mobile -->
+ 
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
     
-    <!-- Main Wrapper -->
+  
     <div class="main-wrapper">
-        <!-- Top Bar -->
+        
         <div class="topbar">
             <div class="topbar-content">
                 <h1 class="page-title"><?= $title ?? 'Dashboard' ?></h1>
@@ -473,7 +473,7 @@
             </div>
         </div>
         
-        <!-- Content -->
+  
         <main class="content">
             <?php if ($title === 'Login'): ?>
                 <div class="login-header">
@@ -488,7 +488,7 @@
         </main>
     </div>
     
-    <!-- Mobile Toggle Button -->
+  
     <button class="mobile-toggle" onclick="toggleSidebar()">
         <i class="fas fa-bars"></i>
     </button>
