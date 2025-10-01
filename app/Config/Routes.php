@@ -15,4 +15,5 @@ $routes->get('bahan', 'Bahan::index');
 $routes->get('bahan/create', 'Bahan::create'); 
 $routes->post('bahan/store', 'Bahan::store'); 
 $routes->match(['get', 'post'], 'bahan/edit/(:num)', 'Bahan::edit/$1'); 
-$routes->post('bahan/update/(:num)', 'Bahan::update/$1');  
+$routes->post('bahan/update/(:num)', 'Bahan::update/$1'); 
+$routes->get('bahan/delete/(:num)', 'Bahan::delete/$1'); 

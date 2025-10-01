@@ -32,7 +32,7 @@ class Bahan extends Controller
     public function store()
     {
         $post = $this->request->getPost();
-        $post['status'] = 'tersedia';  
+        $post['status'] = 'tersedia';
 
         if (!isset($post['jumlah']) || $post['jumlah'] < 0) {
             return redirect()->back()->with('error', 'Jumlah harus lebih dari atau sama dengan 0');
@@ -63,7 +63,6 @@ class Bahan extends Controller
         $post = $this->request->getPost();
         $bahanLama = $this->model->find($id);
 
-        
         if (!isset($post['jumlah']) || $post['jumlah'] < 0) {
             return redirect()->back()->with('error', 'Jumlah harus lebih dari atau sama dengan 0');
         }
@@ -71,7 +70,6 @@ class Bahan extends Controller
             return redirect()->back()->with('error', 'Tanggal kadaluarsa harus setelah tanggal masuk');
         }
 
-        
         $today = date('Y-m-d');
         $status = 'tersedia';
         if ($post['jumlah'] <= 0) {
@@ -87,6 +85,23 @@ class Bahan extends Controller
             return redirect()->to('/bahan')->with('success', 'Stok bahan berhasil diperbarui');
         } else {
             return redirect()->back()->with('error', 'Gagal memperbarui stok: ' . implode(', ', $this->model->errors()));
+        }
+    }
+
+    public function delete($id)
+    {
+        $bahan = $this->model->find($id);
+        if (!$bahan) {
+            return redirect()->to('/bahan')->with('error', 'Bahan tidak ditemukan');
+        }
+        if ($bahan['status'] !== 'kadaluarsa') {
+            return redirect()->to('/bahan')->with('error', 'Hanya bahan kadaluarsa yang bisa dihapus');
+        }
+
+        if ($this->model->delete($id)) {
+            return redirect()->to('/bahan')->with('success', 'Bahan kadaluarsa berhasil dihapus');
+        } else {
+            return redirect()->to('/bahan')->with('error', 'Gagal menghapus bahan: ' . implode(', ', $this->model->errors()));
         }
     }
 }

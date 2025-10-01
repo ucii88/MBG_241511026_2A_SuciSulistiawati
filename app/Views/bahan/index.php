@@ -36,6 +36,9 @@
                 <td><?= $item['status'] ?></td>
                 <td>
                     <a href="<?= base_url('bahan/edit/' . $item['id']) ?>" class="btn btn-warning btn-sm">Edit</a>
+                    <?php if ($item['status'] === 'kadaluarsa'): ?>
+                        <a href="<?= base_url('bahan/delete/' . $item['id']) ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin hapus bahan kadaluarsa?')">Hapus</a>
+                    <?php endif; ?>
                 </td>
             </tr>
         <?php endforeach; ?>
