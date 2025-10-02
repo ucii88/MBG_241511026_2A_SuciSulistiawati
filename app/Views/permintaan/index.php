@@ -1,7 +1,7 @@
 <?= $this->extend('template') ?>
 
 <?= $this->section('content') ?>
-
+<h2>Lihat Status Permintaan</h2>
 <?php if (session()->getFlashdata('success')): ?>
     <div class="alert alert-success"><?= session()->getFlashdata('success') ?></div>
 <?php endif; ?>
@@ -17,7 +17,9 @@
             <th>Menu</th>
             <th>Jumlah Porsi</th>
             <th>Status</th>
-            <th>Bahan Diminta (Jumlah)</th>
+            <?php if (session()->get('role') === 'gudang'): ?>
+                <th>Bahan Diminta (Jumlah)</th>
+            <?php endif; ?>
         </tr>
     </thead>
     <tbody>
@@ -36,7 +38,10 @@
                     'bahan' => []
                 ];
             }
-            $groupedPermintaan[$id]['bahan'][] = $item['bahan_nama'] . ' (' . $item['jumlah_diminta'] . ')';
+           
+            if (session()->get('role') === 'gudang' && isset($item['bahan_nama'])) {
+                $groupedPermintaan[$id]['bahan'][] = $item['bahan_nama'] . ' (' . ($item['jumlah_diminta'] ?? 0) . ')';
+            }
         }
         foreach ($groupedPermintaan as $item): ?>
             <tr>
@@ -46,7 +51,9 @@
                 <td><?= $item['menu_makan'] ?></td>
                 <td><?= $item['jumlah_porsi'] ?></td>
                 <td><?= $item['status'] ?></td>
-                <td><?= implode(', ', $item['bahan']) ?></td>
+                <?php if (session()->get('role') === 'gudang'): ?>
+                    <td><?= implode(', ', $item['bahan']) ?: 'Tidak ada detail' ?></td>
+                <?php endif; ?>
             </tr>
         <?php endforeach; ?>
     </tbody>
