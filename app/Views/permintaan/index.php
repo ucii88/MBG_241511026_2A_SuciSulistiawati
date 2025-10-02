@@ -19,6 +19,7 @@
             <th>Status</th>
             <?php if (session()->get('role') === 'gudang'): ?>
                 <th>Bahan Diminta (Jumlah)</th>
+                <th>Aksi</th>
             <?php endif; ?>
         </tr>
     </thead>
@@ -38,7 +39,6 @@
                     'bahan' => []
                 ];
             }
-           
             if (session()->get('role') === 'gudang' && isset($item['bahan_nama'])) {
                 $groupedPermintaan[$id]['bahan'][] = $item['bahan_nama'] . ' (' . ($item['jumlah_diminta'] ?? 0) . ')';
             }
@@ -53,6 +53,14 @@
                 <td><?= $item['status'] ?></td>
                 <?php if (session()->get('role') === 'gudang'): ?>
                     <td><?= implode(', ', $item['bahan']) ?: 'Tidak ada detail' ?></td>
+                    <td>
+                        <?php if ($item['status'] === 'menunggu'): ?>
+                            <div class="btn-group" role="group">
+                                <a href="<?= base_url('permintaan/approve/' . $item['id']) ?>" class="btn btn-success btn-sm" onclick="return confirm('Yakin approve? Stok akan dikurangi.')">Approve</a>
+                                <a href="<?= base_url('permintaan/reject/' . $item['id']) ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin reject?')">Reject</a>
+                            </div>
+                        <?php endif; ?>
+                    </td>
                 <?php endif; ?>
             </tr>
         <?php endforeach; ?>
