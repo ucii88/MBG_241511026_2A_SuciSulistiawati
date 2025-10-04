@@ -16,6 +16,7 @@ class BahanBakuModel extends Model
     {
         $bahan = $this->findAll();
         $today = date('Y-m-d'); 
+        
         foreach ($bahan as &$item) {
             if ($item['jumlah'] == 0) {
                 $item['status'] = 'habis';
@@ -26,9 +27,17 @@ class BahanBakuModel extends Model
             } else {
                 $item['status'] = 'tersedia';
             }
-           
+            
             $this->update($item['id'], ['status' => $item['status']]);
         }
+        
         return $bahan;
+    }
+
+    public function isUsedInPermintaan($id)
+    {
+        $builder = $this->db->table('permintaan_detail');
+        $count = $builder->where('bahan_id', $id)->countAllResults();
+        return $count > 0;
     }
 }

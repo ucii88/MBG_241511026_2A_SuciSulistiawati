@@ -98,10 +98,17 @@ class Bahan extends Controller
             return redirect()->to('/bahan')->with('error', 'Hanya bahan kadaluarsa yang bisa dihapus');
         }
 
-        if ($this->model->delete($id)) {
-            return redirect()->to('/bahan')->with('success', 'Bahan kadaluarsa berhasil dihapus');
-        } else {
-            return redirect()->to('/bahan')->with('error', 'Gagal menghapus bahan: ' . implode(', ', $this->model->errors()));
+        // Cek apakah bahan masih digunakan di permintaan
+        if ($this->model->isUsedInPermintaan($id)) {
+            return redirect()->to('/bahan')->with('error', 'Bahan tidak dapat dihapus karena masih terkait dengan data permintaan.');
         }
+
+        if ($this->model->delete($id)) {
+            return redirect()->to('/bahan')->with('success', 'Bahan berhasil dihapus');
+        }
+        
+        return redirect()->to('/bahan')->with('error', 'Gagal menghapus bahan');
     }
+
+
 }

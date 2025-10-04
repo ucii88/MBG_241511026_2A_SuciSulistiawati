@@ -34,7 +34,51 @@
         <label for="tanggal_kadaluarsa" class="form-label">Tanggal Kadaluarsa</label>
         <input type="date" class="form-control" id="tanggal_kadaluarsa" name="tanggal_kadaluarsa" value="<?= old('tanggal_kadaluarsa', $bahan['tanggal_kadaluarsa']) ?>" required>
     </div>
-    <button type="submit" class="btn btn-primary" onclick="return confirm('Yakin update stok bahan?')">Update</button>
-    <a href="<?= base_url('bahan') ?>" class="btn btn-secondary">Batal</a>
+    <button type="button" class="btn btn-warning" onclick="showUpdateConfirmation(this.form)">
+        <i class="fas fa-save me-2"></i>Update
+    </button>
+    <a href="<?= base_url('bahan') ?>" class="btn btn-light">
+        <i class="fas fa-times me-2"></i>Batal
+    </a>
 </form>
+
+<!-- Modal Konfirmasi Update -->
+<div class="modal fade" id="updateConfirmationModal" tabindex="-1" aria-labelledby="updateConfirmationModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title" id="updateConfirmationModalLabel">Konfirmasi Update</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body py-4">
+                <div class="text-center mb-4">
+                    <i class="fas fa-edit text-warning fa-3x"></i>
+                </div>
+                <p class="text-center fs-5 mb-0">Apakah Anda yakin ingin mengupdate data bahan ini?</p>
+                <div class="mt-4 p-3 bg-light rounded">
+                    <div class="row">
+                        <div class="col-4"><strong>Nama Bahan:</strong></div>
+                        <div class="col-8" id="confirmNama"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4"><strong>Jumlah:</strong></div>
+                        <div class="col-8"><span id="confirmJumlah"></span> <span id="confirmSatuan"></span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4"><strong>Kategori:</strong></div>
+                        <div class="col-8" id="confirmKategori"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer border-0 justify-content-center gap-2">
+                <button type="button" class="btn btn-light px-4" data-bs-dismiss="modal">
+                    <i class="fas fa-times me-2"></i>Batal
+                </button>
+                <button type="button" class="btn btn-warning px-4" id="confirmUpdateBtn">
+                    <i class="fas fa-save me-2"></i>Update
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 <?= $this->endSection() ?>

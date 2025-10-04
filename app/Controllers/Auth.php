@@ -20,18 +20,9 @@ class Auth extends Controller
     $email = $this->request->getPost('email');
     $password = $this->request->getPost('password');
 
-    log_message('debug', 'Input email: ' . $email . ', password: ' . $password);
-
     $user = $model->where('email', $email)->first();
 
-    log_message('debug', 'User found: ' . json_encode($user));
-
-    if ($user) {
-        log_message('debug', 'Password verify result: ' . (password_verify($password, $user['password']) ? 'true' : 'false'));
-    }
-
     if ($user && password_verify($password, $user['password'])) {
-        log_message('debug', 'Login berhasil untuk: ' . $user['email']);
         session()->set([
             'user_id' => $user['id'],
             'name' => $user['name'],
@@ -47,7 +38,6 @@ class Auth extends Controller
         }
     }
 
-    log_message('debug', 'Login gagal untuk email: ' . $email);
     return redirect()->back()->with('error', 'Email atau password salah');
 }
 

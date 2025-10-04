@@ -89,7 +89,6 @@ class Permintaan extends Controller
         return redirect()->to('/permintaan')->with('success', 'Permintaan bahan berhasil dibuat');
     }
 
-    
     public function approve($id)
     {
         if (session()->get('role') !== 'gudang') {
@@ -100,7 +99,6 @@ class Permintaan extends Controller
             return redirect()->to('/permintaan')->with('error', 'Permintaan tidak valid atau sudah diproses');
         }
 
-        
         $details = $this->db->table('permintaan_detail')->where('permintaan_id', $id)->get()->getResultArray();
         $canApprove = true;
         foreach ($details as $detail) {
@@ -114,17 +112,14 @@ class Permintaan extends Controller
             return redirect()->to('/permintaan')->with('error', 'Stok tidak cukup untuk approve');
         }
 
-     
         foreach ($details as $detail) {
             $this->bahanModel->update($detail['bahan_id'], ['jumlah' => $this->bahanModel->find($detail['bahan_id'])['jumlah'] - $detail['jumlah_diminta']]);
         }
 
-       
         $this->model->update($id, ['status' => 'disetujui']);
         return redirect()->to('/permintaan')->with('success', 'Permintaan disetujui dan stok dikurangi');
     }
 
-    
     public function reject($id)
     {
         if (session()->get('role') !== 'gudang') {

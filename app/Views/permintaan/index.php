@@ -56,8 +56,8 @@
                     <td>
                         <?php if ($item['status'] === 'menunggu'): ?>
                             <div class="btn-group" role="group">
-                                <a href="<?= base_url('permintaan/approve/' . $item['id']) ?>" class="btn btn-success btn-sm" onclick="return confirm('Yakin approve? Stok akan dikurangi.')">Approve</a>
-                                <a href="<?= base_url('permintaan/reject/' . $item['id']) ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin reject?')">Reject</a>
+                                <button class="btn btn-success btn-sm" onclick="openConfirmationModal('<?= $item['id'] ?>', 'approve', '<?= base_url('permintaan/approve/' . $item['id']) ?>')">Approve</button>
+                                <button class="btn btn-danger btn-sm" onclick="openConfirmationModal('<?= $item['id'] ?>', 'reject', '<?= base_url('permintaan/reject/' . $item['id']) ?>')">Reject</button>
                             </div>
                         <?php endif; ?>
                     </td>

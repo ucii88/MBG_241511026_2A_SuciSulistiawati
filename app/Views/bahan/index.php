@@ -33,12 +33,27 @@
                 <td><?= $item['satuan'] ?></td>
                 <td><?= $item['tanggal_masuk'] ?></td>
                 <td><?= $item['tanggal_kadaluarsa'] ?></td>
-                <td><?= $item['status'] ?></td>
                 <td>
-                    <a href="<?= base_url('bahan/edit/' . $item['id']) ?>" class="btn btn-warning btn-sm">Edit</a>
+                    <span class="badge bg-<?php 
+                        echo match($item['status']) {
+                            'tersedia' => 'success',
+                            'habis' => 'danger',
+                            'kadaluarsa' => 'dark',
+                            'segera_kadaluarsa' => 'warning',
+                            'tidak_aktif' => 'secondary',
+                            'dihapus' => 'secondary',
+                            default => 'info'
+                        };
+                    ?>">
+                        <?= str_replace('_', ' ', ucfirst($item['status'])) ?>
+                    </span>
+                </td>
+                <td>
+                    <button class="btn btn-warning btn-sm" onclick="openConfirmationModal('<?= $item['id'] ?>', 'edit', '<?= base_url('bahan/edit/' . $item['id']) ?>')">Edit</button>
                     <?php if ($item['status'] === 'kadaluarsa'): ?>
-                        <a href="<?= base_url('bahan/delete/' . $item['id']) ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin hapus bahan kadaluarsa?')">Hapus</a>
+                        <button class="btn btn-danger btn-sm" onclick="openConfirmationModal('<?= $item['id'] ?>', 'hapus', '<?= base_url('bahan/delete/' . $item['id']) ?>')">Hapus</button>
                     <?php endif; ?>
+                </td>
                 </td>
             </tr>
         <?php endforeach; ?>
