@@ -56,7 +56,7 @@ function validateForm(formId) {
         let isValid = true;
         let errorMessage = errorMessages.text;
 
-        // Reset custom validity
+       
         input.setCustomValidity('');
 
         if (!input.value.trim()) {
