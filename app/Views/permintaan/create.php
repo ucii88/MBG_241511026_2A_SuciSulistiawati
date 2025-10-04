@@ -57,8 +57,10 @@
                     Jumlah diminta wajib diisi
                 </div>
             </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-secondary mt-4" onclick="addBahanField(document.querySelector('#bahan_id[0]').innerHTML)">Tambah Bahan</button>
+            <div class="col-2 d-flex align-items-end mb-2">
+                <button type="button" class="btn btn-success" onclick="addBahanField()">
+                    <i class="fas fa-plus"></i> Tambah Bahan
+                </button>
             </div>
         </div>
     </div>
@@ -70,7 +72,7 @@
     </a>
 </form>
 
-<!-- Modal Konfirmasi Kirim -->
+<!-- Modal Konfirmasi Kirim Permintaan -->
 <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">

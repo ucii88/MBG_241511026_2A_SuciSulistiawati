@@ -7,9 +7,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
+    <?php if ($title === 'Login'): ?>
+    <link rel="stylesheet" href="<?= base_url('css/login.css') ?>">
+    <?php endif; ?>
 </head>
-<body>
-    
+<body class="<?= ($title === 'Login') ? 'login-page' : '' ?>">
+    <?php if ($title !== 'Login'): ?>
     <aside class="sidebar" id="sidebar">
         <div class="sidebar-header">
             <h3>Sistem MBG</h3>
@@ -22,6 +25,9 @@
                 <?php if (session()->get('role') === 'gudang'): ?>
                     <a href="<?= base_url('bahan') ?>" class="menu-item <?= ($title === 'Data Bahan Baku') ? 'active' : '' ?>">
                         <i class="fas fa-boxes"></i> Data Bahan Baku
+                    </a>
+                    <a href="<?= base_url('permintaan') ?>" class="menu-item <?= ($title === 'Lihat Status Permintaan') ? 'active' : '' ?>">
+                        <i class="fas fa-clipboard-list"></i> Lihat Status Permintaan
                     </a>
                 <?php endif; ?>
                 <?php if (session()->get('role') === 'dapur'): ?>
@@ -61,7 +67,13 @@
 
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
 
+    <button class="mobile-toggle" onclick="toggleSidebar()">
+        <i class="fas fa-bars"></i>
+    </button>
+    <?php endif; ?>
+
     <div class="main-wrapper">
+        <?php if ($title !== 'Login'): ?>
         <div class="topbar">
             <div class="topbar-content">
                 <h1 class="page-title"><?= $title ?? 'Dashboard' ?></h1>
@@ -70,13 +82,14 @@
                 </div>
             </div>
         </div>
+        <?php endif; ?>
 
         <main class="content">
             <?php if ($title === 'Login'): ?>
-                <div class="login-header">
-                    <h1>SISTEM PEMANTAUAN BAHAN BAKU MBG</h1>
-                    <p>Silakan login untuk melanjutkan</p>
-                </div>
+            <div class="login-header">
+                <h1>SISTEM PEMANTAUAN BAHAN BAKU MBG</h1>
+                <p>Silakan login untuk melanjutkan</p>
+            </div>
             <?php endif; ?>
             
             <div class="content-container">
@@ -85,11 +98,8 @@
         </main>
     </div>
 
-    <button class="mobile-toggle" onclick="toggleSidebar()">
-        <i class="fas fa-bars"></i>
-    </button>
-
     <!-- Modal Konfirmasi -->
+    <?php if ($title !== 'Login'): ?>
     <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -114,8 +124,10 @@
             </div>
         </div>
     </div>
+    <?php endif; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="<?= base_url('js/script.js') ?>"></script>
+    <?= $this->renderSection('scripts') ?>
 </body>
 </html>

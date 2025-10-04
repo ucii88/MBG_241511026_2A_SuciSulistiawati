@@ -28,6 +28,7 @@ class Permintaan extends Controller
             $data['permintaan'] = $this->model->where('pemohon_id', session()->get('user_id'))
                                              ->select('permintaan.*, users.name as pemohon_name')
                                              ->join('users', 'users.id = permintaan.pemohon_id')
+                                             ->orderBy('permintaan.id', 'DESC')
                                              ->findAll();
         } else if ($role === 'gudang') {
             $data['permintaan'] = $this->model->getPermintaanWithDetails();
@@ -101,15 +102,37 @@ class Permintaan extends Controller
 
         $details = $this->db->table('permintaan_detail')->where('permintaan_id', $id)->get()->getResultArray();
         $canApprove = true;
+        $error_message = '';
+        
         foreach ($details as $detail) {
             $bahan = $this->bahanModel->find($detail['bahan_id']);
+            
+            if ($bahan['status'] === 'kadaluarsa') {
+                $error_message = 'Bahan "'.$bahan['nama'].'" sudah kadaluarsa';
+                $canApprove = false;
+                break;
+            }
+            if ($bahan['status'] === 'segera_kadaluarsa') {
+                $error_message = 'Bahan "'.$bahan['nama'].'" akan segera kadaluarsa';
+                $canApprove = false;
+                break;
+            }
+            if ($bahan['status'] !== 'tersedia') {
+                $error_message = 'Bahan "'.$bahan['nama'].'" tidak tersedia';
+                $canApprove = false;
+                break;
+            }
+            
+            
             if ($bahan['jumlah'] < $detail['jumlah_diminta']) {
+                $error_message = 'Stok bahan "'.$bahan['nama'].'" tidak mencukupi';
                 $canApprove = false;
                 break;
             }
         }
+        
         if (!$canApprove) {
-            return redirect()->to('/permintaan')->with('error', 'Stok tidak cukup untuk approve');
+            return redirect()->to('/permintaan')->with('error', $error_message);
         }
 
         foreach ($details as $detail) {
@@ -130,7 +153,15 @@ class Permintaan extends Controller
             return redirect()->to('/permintaan')->with('error', 'Permintaan tidak valid atau sudah diproses');
         }
 
-        $this->model->update($id, ['status' => 'ditolak']);
+        $alasanDitolak = $this->request->getPost('alasan_ditolak');
+        if (empty($alasanDitolak)) {
+            return redirect()->to('/permintaan')->with('error', 'Alasan penolakan harus diisi');
+        }
+
+        $this->model->update($id, [
+            'status' => 'ditolak',
+            'alasan_ditolak' => $alasanDitolak
+        ]);
         return redirect()->to('/permintaan')->with('success', 'Permintaan ditolak');
     }
 }

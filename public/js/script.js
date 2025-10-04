@@ -10,27 +10,33 @@ function toggleSidebar() {
 function addBahanField(bahanOptions) {
     const container = document.getElementById('bahan-fields');
     if (!container) return;
+    
     const index = container.getElementsByClassName('row').length;
     const row = document.createElement('div');
     row.className = 'row mb-3';
     row.innerHTML = `
         <div class="col-5">
-            <label for="bahan_id[${index}]" class="form-label">Bahan</label>
+            <label for="bahan_id[${index}]" class="form-label required">Bahan</label>
             <select class="form-select" id="bahan_id[${index}]" name="bahan_id[${index}]" required>
-                <option value="">Pilih Bahan</option>
-                <?php foreach ($bahan as $item): ?>
-                    <option value="<?= $item['id'] ?>"><?= $item['nama'] ?></option>
-                <?php endforeach; ?>
+                ${bahanOptions}
             </select>
-            <div class="invalid-feedback">Wajib diisi!</div>
+            <div class="invalid-feedback">
+                <i class="fas fa-exclamation-circle"></i>
+                Bahan wajib dipilih
+            </div>
         </div>
         <div class="col-5">
-            <label for="jumlah_diminta[${index}]" class="form-label">Jumlah Diminta</label>
-            <input type="number" class="form-control" id="jumlah_diminta[${index}]" name="jumlah_diminta[${index}]" min="1" required>
-            <div class="invalid-feedback">Wajib diisi!</div>
+            <label for="jumlah_diminta[${index}]" class="form-label required">Jumlah Diminta</label>
+            <input type="number" class="form-control" id="jumlah_diminta[${index}]" name="jumlah_diminta[${index}]" min="1" required placeholder="Masukkan jumlah yang diminta">
+            <div class="invalid-feedback">
+                <i class="fas fa-exclamation-circle"></i>
+                Jumlah diminta wajib diisi
+            </div>
         </div>
         <div class="col-2">
-            <button type="button" class="btn btn-danger mt-4" onclick="this.parentElement.parentElement.remove()">Hapus</button>
+            <button type="button" class="btn btn-danger mt-4" onclick="this.parentElement.parentElement.remove()">
+                <i class="fas fa-trash-alt"></i> Hapus
+            </button>
         </div>
     `;
     container.appendChild(row);
@@ -224,9 +230,44 @@ function showUpdateConfirmation(form) {
     modal.show();
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    const initialBahanOptions = document.querySelector('#bahan_id[0]')?.innerHTML || '';
-    if (initialBahanOptions) {
-        window.addBahanField = function() { addBahanField(initialBahanOptions); };
-    }
-});
+function getBahanOptions() {
+    const firstSelect = document.querySelector('select[name="bahan_id[0]"]');
+    return firstSelect ? firstSelect.innerHTML : '';
+}
+
+function addBahanField() {
+    const container = document.getElementById('bahan-fields');
+    if (!container) return;
+    
+    const index = container.getElementsByClassName('row').length;
+    const bahanOptions = getBahanOptions();
+    
+    const row = document.createElement('div');
+    row.className = 'row mb-3';
+    row.innerHTML = `
+        <div class="col-5">
+            <label for="bahan_id[${index}]" class="form-label required">Bahan</label>
+            <select class="form-select" id="bahan_id[${index}]" name="bahan_id[${index}]" required>
+                ${bahanOptions}
+            </select>
+            <div class="invalid-feedback">
+                <i class="fas fa-exclamation-circle"></i>
+                Bahan wajib dipilih
+            </div>
+        </div>
+        <div class="col-5">
+            <label for="jumlah_diminta[${index}]" class="form-label required">Jumlah Diminta</label>
+            <input type="number" class="form-control" id="jumlah_diminta[${index}]" name="jumlah_diminta[${index}]" min="1" required placeholder="Masukkan jumlah yang diminta">
+            <div class="invalid-feedback">
+                <i class="fas fa-exclamation-circle"></i>
+                Jumlah diminta wajib diisi
+            </div>
+        </div>
+        <div class="col-2 d-flex align-items-end mb-2">
+            <button type="button" class="btn btn-danger" onclick="this.closest('.row').remove()">
+                <i class="fas fa-trash-alt"></i> Hapus
+            </button>
+        </div>
+    `;
+    container.appendChild(row);
+}

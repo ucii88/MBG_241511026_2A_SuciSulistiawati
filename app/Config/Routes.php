@@ -14,7 +14,7 @@ $routes->get('permintaan', 'Permintaan::index');
 $routes->get('permintaan/create', 'Permintaan::create');  
 $routes->post('permintaan/store', 'Permintaan::store');  
 $routes->get('permintaan/approve/(:num)', 'Permintaan::approve/$1');  
-$routes->get('permintaan/reject/(:num)', 'Permintaan::reject/$1');  
+$routes->post('permintaan/reject/(:num)', 'Permintaan::reject/$1');  
 $routes->get('bahan', 'Bahan::index');  
 $routes->get('bahan/create', 'Bahan::create'); 
 $routes->post('bahan/store', 'Bahan::store');  
